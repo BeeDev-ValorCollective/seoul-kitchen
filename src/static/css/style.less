@@ -1,0 +1,53 @@
+@import './base/base.less';
+
+
+body {
+    background: @background_default;
+    background: @background;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 99%;
+    // min-height: 600px;
+    color: @02;
+    .flexcolumn();
+
+    #root {
+        .flexcolumn();
+        width: 99%;
+
+        header {
+            .flexrow();
+            width: 95%;
+            justify-content: space-between;
+    
+            img {
+                max-width: 200px;
+                justify-self: flex-start;
+            }
+    
+    
+            nav {
+                .flexrow();
+                width: 75%;
+                justify-content: space-evenly;
+
+                a {
+                    color: @02;
+                }
+            }
+        }
+        main {
+            .flexcolumn();
+            min-height: 600px
+        }
+        footer {
+            .flexcolumn();
+            min-height: 200px;
+        }
+    }
+}
+
+
+
+
+@import './base/media.less';
