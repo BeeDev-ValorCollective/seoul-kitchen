@@ -23,6 +23,8 @@ body {
             img {
                 max-width: 200px;
                 justify-self: flex-start;
+                border-radius: 20%;
+                padding: .5em;
             }
     
     
@@ -38,11 +40,45 @@ body {
         }
         main {
             .flexcolumn();
-            min-height: 600px
+            min-height: 600px;
+            width: 95%;
         }
         footer {
-            .flexcolumn();
+            .flexrow();
             min-height: 200px;
+            width: 95%;
+            justify-content: space-between;
+
+            .footer_links {
+                .flexrow();
+                width: 50%;
+                justify-content: space-between;
+
+                .footer_link_column {
+                    .flexcolumn();
+
+                    a {
+                        color:@02;
+                    }
+                }
+            }
+            .footer_badges {
+                .flexrow();
+                width: 30%;
+                justify-content: space-evenly;
+
+                img {
+                    max-width: 150px;
+                    border-radius: 20%;
+                    padding: .5em;
+                }
+
+                .footer_socials {
+                    background-color: @02;
+                    border-radius: 20%;
+                    padding: .5em;
+                }
+            }
         }
     }
 }
