@@ -64,11 +64,17 @@ body {
                 width: 100%;
                 justify-content: space-between;
 
-                .split_box_text, .split_box_button {
+                .split_box_img, .split_box_button {
                     .flexcolumn();
                 }
-                .split_box_text {
+                .split_box_img {
                     width: 70%;
+                    height: 200px;
+                    overflow: hidden;
+
+                    img {
+                        aspect-ratio: 1/1;
+                    }
                 }
                 .split_box_button{
                     width: 20%;

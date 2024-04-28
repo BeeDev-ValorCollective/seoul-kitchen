@@ -96,15 +96,20 @@ body #root main .split_box {
   width: 100%;
   justify-content: space-between;
 }
-body #root main .split_box .split_box_text,
+body #root main .split_box .split_box_img,
 body #root main .split_box .split_box_button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body #root main .split_box .split_box_text {
+body #root main .split_box .split_box_img {
   width: 70%;
+  height: 200px;
+  overflow: hidden;
+}
+body #root main .split_box .split_box_img img {
+  aspect-ratio: 1/1;
 }
 body #root main .split_box .split_box_button {
   width: 20%;
