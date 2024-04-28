@@ -78,8 +78,7 @@ body #root main .wrapper {
 }
 body #root main .wrapper_border {
   border: 3px solid transparent;
-  background: #cd2c3b;
-  background: linear-gradient(153deg, #cd2c3b 20%, #124b9c 80%);
+  border-image: linear-gradient(153deg, #cd2c3b 20%, #124b9c 80%);
   border-image-slice: 1;
 }
 body #root main .about {
