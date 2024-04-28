@@ -1,3 +1,7 @@
+.border {
+  background: #cd2c3b;
+  background: linear-gradient(153deg, #cd2c3b 20%, #124b9c 80%);
+}
 .flexrow {
   display: flex;
   flex-direction: row;

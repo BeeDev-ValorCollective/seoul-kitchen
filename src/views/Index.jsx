@@ -1,11 +1,15 @@
-import SeoulTower from '../static/assets/SeoulTower.jpg'
+import SlideShow from '../components/Slideshow_Component/Slideshow'
+import About from '../components/About'
+import MenuComponent from '../components/MenuComponent'
 
 const Index = () => {
 
 
     return (
         <>
-        <img src={SeoulTower} alt="Seoul Tower" />
+        <SlideShow />
+        <About />
+        <MenuComponent />
         </>
     )
 }
